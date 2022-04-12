@@ -23,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01E4A56128062B5E00F509EB /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		01E4A56328062BF000F509EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		01EF233D27FE84880039ABF7 /* PassGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PassGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF234027FE84880039ABF7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +43,9 @@
 		01EF233427FE84880039ABF7 = {
 			isa = PBXGroup;
 			children = (
-				01EF233F27FE84880039ABF7 /* PassGen */,
+				01E4A56328062BF000F509EB /* README.md */,
+				01E4A56128062B5E00F509EB /* LICENSE */,
+				01EF234027FE84880039ABF7 /* main.swift */,
 				01EF233E27FE84880039ABF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +56,6 @@
 				01EF233D27FE84880039ABF7 /* PassGen */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		01EF233F27FE84880039ABF7 /* PassGen */ = {
-			isa = PBXGroup;
-			children = (
-				01EF234027FE84880039ABF7 /* main.swift */,
-			);
-			path = PassGen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,10 +239,12 @@
 		01EF234527FE84880039ABF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 426M7TZQ8Y;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -254,10 +252,12 @@
 		01EF234627FE84880039ABF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 426M7TZQ8Y;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
