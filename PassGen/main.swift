@@ -16,17 +16,22 @@ guard arguments.count <= 2 else {
 
 let length: UInt
 
-if arguments.count == 2 {
-	let argument = arguments[1]
-	print(argument)
-	guard let number = UInt(argument) else {
+func process(_ input: String?) -> UInt {
+	if let input = input?.trimmingCharacters(in: .whitespacesAndNewlines),
+	   let number = UInt(input),
+	   number > 0 {
+		return number
+	} else {
 		print("Incorrect argument passed. Must be an (unsigned) integer greater than 0.\n\nExample: PassGen 16\n")
 		exit(1)
 	}
-	
-	length = number
+}
+
+if arguments.count == 2 {
+	length = process(arguments[1])
 } else {
-	length = 8
+	print("How many characters? ", terminator: "")
+	length = process(readLine())
 }
 
 enum Static {
