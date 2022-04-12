@@ -10,7 +10,7 @@ import Foundation
 let arguments = CommandLine.arguments
 
 guard arguments.count <= 2 else {
-	print("Incorrect number of arguments. Optionally pass a number of characters or supply no argument to receive an 8-character password.\n\nExample: PassGen 16\n")
+	print("Incorrect number of arguments. Optionally pass a number of characters.\n   Example: PassGen 16")
 	exit(1)
 }
 
@@ -22,7 +22,7 @@ func process(_ input: String?) -> UInt {
 	   number > 0 {
 		return number
 	} else {
-		print("Incorrect argument passed. Must be an (unsigned) integer greater than 0.\n\nExample: PassGen 16\n")
+		print("Incorrect argument passed. Must be an (unsigned) integer greater than 0.\n   Example: PassGen 16")
 		exit(1)
 	}
 }
