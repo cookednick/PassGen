@@ -2,6 +2,8 @@
 
 A barebones passsword generator for the macOS terminal.
 
+![Screenshot](/Screenshot.png "Screenshot")
+
 ## Purpose
 
 Sometimes you need a unique password. This app will produce one of a given length using random characters. These characters are uppercase, lowercase, numerals, and symbols.
