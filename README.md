@@ -1,6 +1,6 @@
 # PassGen
 
-A barebones passsword generator for the macOS terminal.
+A barebones password generator for the macOS terminal.
 
 ![Screenshot](/Screenshot.png "Screenshot")
 
